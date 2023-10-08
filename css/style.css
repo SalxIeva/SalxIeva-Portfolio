@@ -1,5 +1,9 @@
+/* box sizing added for styling purposes */
 * {
   box-sizing: border-box;
+  border-style: solid;
+  border-color: red;
+  border-width: 2px;
 }
 
 body {
@@ -8,7 +12,10 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-
+header {
+  display: flex;
+  justify-content: space-between;
+}
 h1,
 h2,
 h3,
@@ -16,8 +23,13 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: 
 }
 
 p {
   margin: 0;
+}
+.me {
+  width: 100px;
+  height: 80px;
 }

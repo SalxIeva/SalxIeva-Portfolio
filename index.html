@@ -5,40 +5,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>SalxIeva // Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <!-- main logo / nav -->
+  <!-- header contains nav and it selectors for quicker access-->
   <header>
-    <h1>Lernantino</h1>
-    <nav>
+    <h1 id="1">Ieva Saldukaite</h1>
+    <nav class="">
+      <a href="#">About Me</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact Me</a>
     </nav>
   </header>
 
   <!-- hero banner -->
+  <!-- short descriptive intro has been added to benefit all the content -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2 class="description">Developer based in London</h2>
+      <p>Details, creativity and passion brings all the right people together.</p>
+      <!-- my picture has been added in div to separate it from other content -->
+      <div>
+        <img src="../SalxIeva-Portfolio/images/IMG_4645.jpg" alt="girl in the fortress" id="me" width="300">
+      </div>
     </div>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <h2 class="description">About Me</h2>
+      <article>
+        <p>Hello! My name is Ieva Saldukaite and I am Front-End Developer!</p>
+        <p>I have tried many carrers so far, including classical singing, arts, business perpectives.. At the moment I work as Head of Coffee/Manager, full time dog mom and study Front-End Development! This time I am hoping to make my last change in regards to career.</p>
+        <p>I am very good at quick problem solving and looking into all the details when it comes to work. There is no better feeling when you can truly be proud of the work you have done!</p>
+        <p>At the moment I can work with HTML, CSS and basic Javascript but little projects and constant new resources are building my knowledge bigger and bigger every day!</p>
+      </article>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <h2>Work</h2>
+      <h2 class="description">Work</h2>
+      <!-- Horiseon Project added -->
+      <a href="https://salxieva.github.io/horiseon-accesible-resources/" id="horiseon" class="work_section">Horiseon Accesible Resources</a>
+      <!-- Prework project added -->
+      <a href="https://salxieva.github.io/prework-study-guide/" id="prework" class="work_section">Prework Study Project</a>
+      <!-- Run buddy project added -->
+      <a href="#" id="run" class="work_section">Run Buddy</a>
+      <!-- Calculator project added -->
+      <a href="#" id="calculator" class="work_section">Calculator</a>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+      <h2 class="description">Contact Me</h2>
+      <!-- ul list created to list contact info-->
+      <ul id="info">
+        <li class="details">
+          <strong>Email:</strong>
+          <a href="mailto:ieva.saldukaite@gmail.com"><em>ieva.saldukaite@gmail.com</em></a>
+        </li>
+        <li class="details">
+          <strong>GitHub:</strong>
+          <a href="https://github.com/SalxIeva"><em>SalxIeva</em></a>
+        </li>
+      </ul>
     </section>
+    <!-- footer element added to finish html layout -->
+    <footer id="footer">
+      <p><strong>Let's create some websites!</strong></p>
+    </footer>
   </main>
 </body>
 
