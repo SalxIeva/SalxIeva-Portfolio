@@ -1,35 +1,225 @@
-/* box sizing added for styling purposes */
+ /* box sizing added for styling purposes */
+ 
+/*
 * {
   box-sizing: border-box;
   border-style: solid;
   border-color: red;
   border-width: 2px;
-}
+} */
 
+/* :root created in benefit all elements */
+:root {
+  --barbie: #E8476D;
+  --space-around: 3%;
+  --cherry: #520120;
+  --navy:hsl(234, 36%, 26%);
+  --space: 3px 5px;
+  --outside: 4px double #520120;
+  --around: 2px solid #520120; 
+  --box-shadow: 15px 10px 12px #520120; 
+  --border-radius: 25px;
+  --margin: 25px 0;
+  --padding: 0 3%;
+  --black: black;
+} 
+
+/* scroll-bevavior added to benefit webpage styling*/
+ html {
+  scroll-behavior: smooth;
+} 
+
+/* to benefit all elements */
 body {
-  margin: 0;
+  background-image: url(../images/02-portfolio-3.jpg); 
+  margin: 0 5%;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: hsl(192, 19%, 90%);
 }
+
+/* navigation CSS */
 header {
   display: flex;
   justify-content: space-between;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  color: 
+  margin: 0 3% 2% 3%;
+  padding: 10px;
+  border: var(--outside); 
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
 }
 
+nav {
+  display: flex;
+  padding: var(--space);
+  align-items: center;
+  justify-content: space-between;
+  border: var(--around);
+}
+
+.links a {
+  padding: 4px;
+  color: var(--cherry);
+  font-size: 25px;
+  text-decoration: 1px var(--black) underline;
+}
+
+#main {
+  display: flex;
+  border: var(--around);
+  padding: 3px 5px;
+}
+
+/* to benefit heading elements */
+h1, h2 {
+  margin: 10px 0;
+  color: var(--navy);
+  text-decoration: 1.5px var(--black) underline;
+}
+h2 {
+  font-size: 40px;
+}
+
+/* hero-banner to benefit all elements within */
+.hero-banner {
+  padding: var(--space-around);
+  display: flex;
+  justify-content: space-around;
+  border: var(--around);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: var(--margin);
+  padding: 10px;
+  margin: 0 3% 2% 3%;
+}
+
+#blank_box {
+  flex-wrap: wrap;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  
+}
 p {
-  margin: 0;
+  font-family: cursive;
+  font-size: 20px;
 }
-.me {
-  width: 100px;
-  height: 80px;
+
+/* to benefit main page-wrapper section*/
+.page-wrapper {
+  padding: var(--padding);
+} 
+/* to benefit all elements in page-section */
+.page-section {
+  margin: var(--margin);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  
 }
+
+/* to benefit all children in main section */
+#about, #projects, #contact {
+  border: var(--around);
+  padding: var(--space-around);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  margin: 30px 0;
+}
+
+/* CSS grid to benefit all elements within */
+#projects {
+  display: grid;
+  grid-template-rows: 100PX 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "subject subject subject"
+  "horiseon horiseon horiseon"
+  "prework run calculator";
+  border: var(--around);
+  padding: var(--space-around);
+  margin: 3px 0;
+}
+
+/* background-images added to projects section*/
+#subject {
+  grid-area: subject;
+}
+#horiseon {
+  grid-area: horiseon;
+  background-image: url(../images/Horiseon.png);
+}
+#prework {
+  grid-area: prework;
+  background-image: url(../images/PreWork.png);
+}
+#run {
+  grid-area: run;
+  background-image: url(../images/02-run-buddy.jpg);
+}
+#calculator {
+  grid-area: calculator;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+/* flex added to style the items within the grid */
+.work_section {
+  margin: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* to make space between text and bottom of background image */
+  padding-bottom: 10px; 
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: 1.7px var(--black) underline;
+  color: var(--cherry);
+}
+
+/* contact info */
+#contact {
+  padding: var(--space-around);
+  border: var(--around);
+}
+
+/* flex added to benefit styling */
+.details {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% auto;
+}
+.details a {
+  text-decoration: none;
+}
+
+/* a:link added to benefit styling */
+a:link :not(.links) {
+  color: var(--cherry);
+}
+a:visited {
+  color: var(--barbie);
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--black);
+}
+
+/* footer */
+footer {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+
+}
+footer::after {
+  content: "🙌";
+  display: flex;
+  align-items: center;
+} 
