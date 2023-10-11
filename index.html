@@ -13,25 +13,25 @@
   <!-- main logo / nav -->
   <!-- header contains nav and it selectors for quicker access-->
   <header>
-    <h1 id="1">Ieva Saldukaite</h1>
-    <nav class="">
-      <a href="#">About Me</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact Me</a>
+    <h1 id="main">Ieva Saldukaite</h1>
+    <nav class="links">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact Me</a>
     </nav>
   </header>
 
   <!-- hero banner -->
   <!-- short descriptive intro has been added to benefit all the content -->
   <section class="hero-banner">
-    <div>
+    <div id="blank_box">
       <h2 class="description">Developer based in London</h2>
       <p>Details, creativity and passion brings all the right people together.</p>
+    </div>
       <!-- my picture has been added in div to separate it from other content -->
       <div>
-        <img src="../SalxIeva-Portfolio/images/IMG_4645.jpg" alt="girl in the fortress" id="me" width="300">
+        <img src="./images/IMG_4645.jpg" alt="girl in the fortress" id="me" width="500">
       </div>
-    </div>
   </section>
 
   <main class="page-wrapper">
@@ -47,16 +47,18 @@
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2 class="description">Work</h2>
+    <section class="page-section" id="projects">
+      <h2 class="subjects">Projects</h2>
+      <div class="subject"></div>
       <!-- Horiseon Project added -->
-      <a href="https://salxieva.github.io/horiseon-accesible-resources/" id="horiseon" class="work_section">Horiseon Accesible Resources</a>
+      <a href="https://salxieva.github.io/horiseon-accesible-resources/" id="horiseon" class="work_section" target="_blank">Horiseon Accesible Resources</a>
       <!-- Prework project added -->
-      <a href="https://salxieva.github.io/prework-study-guide/" id="prework" class="work_section">Prework Study Project</a>
+      <a href="https://salxieva.github.io/prework-study-guide/" id="prework" class="work_section" target="_blank">Prework Study Project</a>
       <!-- Run buddy project added -->
       <a href="#" id="run" class="work_section">Run Buddy</a>
       <!-- Calculator project added -->
       <a href="#" id="calculator" class="work_section">Calculator</a>
+      </div>
     </section>
 
     <!-- contact -->
@@ -65,12 +67,10 @@
       <!-- ul list created to list contact info-->
       <ul id="info">
         <li class="details">
-          <strong>Email:</strong>
-          <a href="mailto:ieva.saldukaite@gmail.com"><em>ieva.saldukaite@gmail.com</em></a>
+          <a href="mailto:ieva.saldukaite@gmail.com" target="_blank"><em>ieva.saldukaite@gmail.com</em></a>
         </li>
         <li class="details">
-          <strong>GitHub:</strong>
-          <a href="https://github.com/SalxIeva"><em>SalxIeva</em></a>
+          <a href="https://github.com/SalxIeva" target="_blank"><em>SalxIeva</em></a>
         </li>
       </ul>
     </section>
