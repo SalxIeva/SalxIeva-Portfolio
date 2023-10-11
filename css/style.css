@@ -1,5 +1,5 @@
  /* box sizing added for styling purposes */
- 
+
 /*
 * {
   box-sizing: border-box;
@@ -37,6 +37,14 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color: hsl(192, 19%, 90%);
+}
+
+/* media query has been added to benefit different layouts */
+@media all and (min-width: 600px) and (max-width: 900px) {
+  body {
+  background-color: #72E790;
+  background-image: none;
+  }
 }
 
 /* navigation CSS */
